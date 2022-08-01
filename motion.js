@@ -9,6 +9,11 @@ const ws = new WebSocket(process.env.WEBSOCKET_SERVER_ADDRESS);
 
 ws.on("open", function open() {
   console.log("Homebridge connection open.");
+  sendMotionEvent({
+    name: process.env.MOTION_SENSOR_ID,
+    characteristic: "MotionDetected",
+    value: false,
+  })
 });
 
 ws.on("message", function incoming(data) {
