@@ -11,7 +11,7 @@
   "dependencies": {
     "dotenv": "^16.0.1",
     "epoll": "^4.0.1",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "gpio": "^0.2.10",
     "pm2": "^4.1.2",
     "raspi": "^6.0.1",
